@@ -1,0 +1,289 @@
+  .navbar {
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+    z-index: 69;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+  }
+  .pages {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    gap: 3rem;
+    font-size: 1.6rem;
+  }
+  .top-logo {
+    height: 83px;
+  }
+  .navbar .toggle-btn {
+  color: var(--color-headings);
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: none;
+  }
+  .login-btn {
+    background-color: var(--color-primary);
+    color: var(--color-headings);
+    text-transform: uppercase;
+    padding: 0.5rem 3.6rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    }
+  /* ======================================================================== */
+  /* LOGIN POPUP */
+  /* ======================================================================== */
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  .checkbox-container label {
+    flex-grow: 1;
+  }
+  .forgot-password-button {
+    padding: initial;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #ccc;
+    text-decoration: underline;
+  }
+  .login-button, .register-button, .recovery-email-button  {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    background-color: var(--color-headings);
+    color: var(--color-secondary);
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .connect-wallet-button, .connect-gamestop, .connect-metamask, .connect-walletConnect, .connect-ledger, .connect-phantom {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    background-color: #252525c5;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .connect-wallet-button {
+    justify-content: center;
+  }
+  .connect-metamask {
+    background-color: #f6851b;
+  }
+  .connect-walletConnect {
+    background-color: #006FFF;
+  }
+  .connect-ledger {
+    background-color: #252525c5;
+  }
+  .connect-phantom {
+    background-color: #5421f0;
+  }
+  .gamestop-wallet-icon, .metamask-logo, .walletConnect-logo, .ledger-icon, .phantom-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  .walletConnect-logo {
+    margin-right: 4px;
+  }
+  .sign-in-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sign-in-text {
+    margin-left: 10px;
+  }
+  .sign-up-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+  }
+  .sign-up-container p {
+    margin: 0;
+  }
+  .register-button {
+    background-color: var(--color-headings);
+    color: #000;
+  }
+  .sign-up-btn {
+  color: #fff;
+  margin-left: 1rem;
+  }
+/* ======================================================================== */
+/* POP UPS */
+/* ======================================================================== */
+header input[type="text"], header form input[type="password"],
+header input[type="email"] {
+ width: 100%;
+ background: transparent;
+ color: #ccc;
+ border: 1;
+ outline: none;
+ margin-bottom: 10px;
+}
+header form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+p.popup-subtitle {
+text-align: center;
+color: #999;
+margin-bottom: 10px;
+}
+.login-popup, .connect-wallet-popup, .registration-popup, .forgot-password-popup {
+  display: none;
+  }
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #030303;
+  border: 1px solid #ccc;
+  padding: 25px;
+  z-index: 741;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  max-width: 500px;
+}
+.close-button, .close-btn {
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #999;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.close-btn {
+  top: -5px;
+}
+.return-button {
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #999;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+} 
+.separator hr {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid #666;
+  margin: 0 1rem;
+}
+.separator span {
+  padding: 0 0.5rem;
+  font-size: 1.6rem;
+  color: #666;
+}
+/* ========================================================================== */
+/* ERRORS */
+/* ========================================================================== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #030303;
+  border: 1px solid #ccc;
+  padding: 25px;
+  z-index: 888;
+  border-radius: 10px;
+  width: 80vw;
+}
+/* ========================================================================== */
+/* DROPDOWN MENU */
+/* ========================================================================== */
+  .dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(4.2px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+  z-index: 69;
+  }
+  .dropdown-menu.open {
+    height: fit-content;
+  }
+  .dropdown-menu li {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .dropdown-menu .login-btn {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .dropdown-menu li a {
+    color: var(--color-headings)
+  }
+  /* RESPONSIVE DESIGN*/
+  @media(max-width:1024px){
+  .pages, .navbar .login-btn {
+    display: none;
+  }
+  .navbar .toggle-btn {
+    display: block;
+  }
+  .dropdown-menu {
+  display: block;
+  }
+  }
+  @media (max-width:369px) {
+    .dropdown-menu {
+      left: 2rem;
+      width: unset;
+    }
+  }

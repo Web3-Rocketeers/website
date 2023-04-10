@@ -1,0 +1,96 @@
+/* GENERAL */
+/* ========================================================================== */
+.gamestop-wallet-icon, .metamask-logo, .walletConnect-logo, .ledger-icon, .w3r-logo {
+    transition: all 0.33s ease;
+  }
+  .w3r-logo:hover {
+    transform: scale(1.15);
+    transform-origin: center;
+  }
+  /* ========================================================================== */
+  /* HEADER */
+  /* ========================================================================== */
+  .connect-wallet-button, .connect-gamestop, .connect-metamask, .connect-walletConnect, .connect-ledger, .login-button, .login-btn, .register-button, .project-image, 
+  .arrow-right {
+    transition: transform 0.33s ease;
+    transform-origin: center;
+  }
+  .connect-wallet-button:hover, .connect-gamestop:hover, .connect-metamask:hover, .connect-walletConnect:hover, .connect-ledger:hover, .login-button:hover, .login-btn:hover, .register-button:hover, .project-image:hover {
+      transform: scale(1.05);
+    }
+    .login-button:hover, .register-button:hover {
+      background-color: #ebebeb;
+    }
+    .connect-wallet-button:hover, .connect-gamestop:hover, .connect-ledger:hover {
+      background-color: #444444c5;
+    }
+    .connect-wallet-button:hover .gamestop-wallet-icon, .connect-gamestop:hover .gamestop-wallet-icon, .connect-metamask:hover .metamask-logo, .connect-walletConnect:hover .walletConnect-logo, .connect-ledger:hover .ledger-icon {
+      transform: rotate(360deg); /* Rotate the icon 360 degrees on hover */
+    }
+    .close-button, .return-button, .close-btn {
+      transition: transform 0.33s ease, color 0.33s ease;
+    }
+    .close-button:hover, .return-button:hover, .close-btn:hover {
+      color: var(--color-primary);
+      transform: scale(1.2);
+    }
+    .connect-metamask:hover {
+      background-color: #d86b18;
+    }
+    .connect-walletConnect:hover {
+      background-color: #3999fc;
+    }
+    .connect-phantom:hover {
+      background-color: #8761f1;
+    }
+    /* ========================================================================== */
+/* LINKS */
+/* ========================================================================== */
+a:hover {
+    color: var(--color-important);
+  }
+  p a:not(.home):hover {
+    color: var(--color-important);
+  }
+  .link-arrow::after {
+      content: "-->";
+      margin-left: 0.5rem;
+      transition: margin 0.2s;
+    }
+    .link-arrow:hover::after {
+      margin-left: 1rem;
+    }
+    .animate-text {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      transition: color 0.33s ease;
+    }
+    .animate-text::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.33s ease;
+    }
+    .animate-text:hover {
+      color: var(--color-primary);
+    }
+    .animate-text:hover::before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    .animate-text--2:hover {
+      color: var(--color-important);
+    }
+  /* ======================================================================== */
+  /* ACTIVE */
+  /* ======================================================================== */
+  .login-button:active, .login-btn:active, .register-button:active, .toggle-btn:active {
+    scale: 0.95;
+  }

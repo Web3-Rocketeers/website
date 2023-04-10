@@ -1,0 +1,36 @@
+/* ========================================================================== */
+/* PARTIAL CSS RESET */
+/* ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul li {
+    list-style: none;
+  }
+  /* ========================================================================== */
+  /* BASIC */
+  /* ========================================================================== */
+  :root {
+    --color-primary: #d10000;
+    --color-secondary: black;
+    --color-accent: #93186c;
+    --color-accent2: #1C60FF;
+    --color-headings: white;
+    --color-body: #eeeeee;
+    --color-important: #009900;
+    --color-highlight: greenyellow;
+  }
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  #content-wrap {
+  min-height: 71vh;
+  }
+
+  .w3r-logo {
+    height: 82px;
+    margin-bottom: 30px;
+  }
