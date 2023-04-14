@@ -4,7 +4,7 @@
     transition: all 0.33s ease;
   }
   .w3r-logo:hover {
-    transform: scale(1.15);
+    transform: scale(1.15) rotate(-38deg) translateX(-5px) translateY(15px);
     transform-origin: center;
   }
   /* ========================================================================== */
