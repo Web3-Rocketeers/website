@@ -96,7 +96,7 @@ html {
     .homepage p, .community p, .competitions p, .games p, .governance p {
         inline-size: 70%;
         }
-    .homepage p, .community p, .competitions p, .games p, .governance p {
+    .homepage p, .community p, .competitions p, .games p, .governance p, ul.centered {
         text-shadow:
         0.07em 0 black,
         0 0.07em black,

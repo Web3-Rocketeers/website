@@ -65,7 +65,7 @@
 
 
 
-  ul {
+  ul.centered {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,11 +73,11 @@
     padding: 0;
 }
 
-ul li {
+ul.centered li {
     text-align: left;
 }
 
-ul li:before {
+ul.centered li:before {
     content: "";
     display: inline-block;
     width: 8px;
