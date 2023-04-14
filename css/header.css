@@ -8,9 +8,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: #000;
+    /* background: url(../media/images/night-planets-header.jpg);
+    background-size: cover;
     position: fixed;
-    top: 0;
+    top: 0; */
   }
   .pages {
     display: flex;

@@ -15,7 +15,8 @@ html {
   h1 {
   font-size: 6rem;
   text-transform: uppercase;
-  margin-top: 120px;
+  /* margin-top: 120px; Uncomment for fixed navbar*/
+  margin-top: 0;
   color: var(--color-primary);
   text-shadow: 0 0 15px #000;
   }
